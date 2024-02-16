@@ -1,7 +1,11 @@
 const slides = document.querySelectorAll(".slides");
 let slideIndex = 0;
-
 showSlides();
+
+slides.forEach(slide => {
+    const welcomeTextPlaceholder = slide.querySelector(".welcome-text");
+    welcomeTextPlaceholder.innerHTML = generateWelcomeText("Lorem ipsum <u>dolor</u> sit amet.");
+});
 
 function showSlides() {
     slides.forEach(slide => slide.style.display = "none");
@@ -11,17 +15,10 @@ function showSlides() {
     setTimeout(showSlides, 3000);
 }
 
-
-// Function to generate welcome text dynamically
-function generateWelcomeText(title, subtitle) {
+function generateWelcomeText(subtitle) {
     return `
         <p>We at</p>
-        <h1>${title}</h1>
+        <h1>BRIX</h1>
         <p>${subtitle}</p>
     `;
 }
-
-slides.forEach(slide => {
-    const welcomeTextPlaceholder = slide.querySelector(".welcome-text");
-    welcomeTextPlaceholder.innerHTML = generateWelcomeText("BRIX", "Lorem ipsum <u>dolor</u> sit amet.");
-});
