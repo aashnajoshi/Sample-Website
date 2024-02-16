@@ -23,5 +23,5 @@ function generateWelcomeText(title, subtitle) {
 
 slides.forEach(slide => {
     const welcomeTextPlaceholder = slide.querySelector(".welcome-text");
-    welcomeTextPlaceholder.innerHTML = generateWelcomeText("BRIX", "Lorem ipsum dolor sit amet.");
+    welcomeTextPlaceholder.innerHTML = generateWelcomeText("BRIX", "Lorem ipsum <u>dolor</u> sit amet.");
 });
