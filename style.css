@@ -102,7 +102,6 @@
     font-size: 2rem;
     text-align: center;
     z-index: 1;
-    /* Ensure the text appears above the image */
 }
 
 h1 {
