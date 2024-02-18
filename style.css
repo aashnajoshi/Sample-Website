@@ -6,14 +6,14 @@
 }
 
 .hero-section {
-    width: 100vw;
-    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .slides {
     display: none;
-    width: 100%;
-    height: 100%;
 }
 
 .slides:first-child {
