@@ -82,7 +82,7 @@ h1 {
 .navbar a:hover,
 .dropdown:hover .dropbtn {
     background-color: transparent;
-    color: var(--grey);
+    color: #f9f9f9da;
 }
 
 .dropdown-content {
