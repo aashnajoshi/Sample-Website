@@ -56,6 +56,11 @@ button:hover,
     right: 0em;
 }
 
+.help:hover {
+    transition-duration: 10ms;
+    transform: scale(1.1);
+}
+
 /* navbar */
 .navbar {
     position: fixed;
@@ -112,6 +117,7 @@ button:hover,
 
 .dropdown-content h4 {
     font-size: 1rem;
+    text-align: center;
     color: var(--mid_d);
     margin: var(--pad) 0;
 }
