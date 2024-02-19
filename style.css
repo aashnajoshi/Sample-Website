@@ -8,8 +8,9 @@
 
 :root {
     --white: #f1f1f1;
-    --black: black;
-    --grey: #000000aa;
+    --wh: #f9f9f9da;
+    --black: #070606;
+    --grey: #000000a5;
 }
 
 body {
@@ -45,7 +46,7 @@ h1 {
     top: 0;
     left: 0;
     width: 100vw;
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: #ffffff14;
     z-index: 1000;
     padding: .5rem;
     display: flex;
@@ -82,7 +83,7 @@ h1 {
 .navbar a:hover,
 .dropdown:hover .dropbtn {
     background-color: transparent;
-    color: #f9f9f9da;
+    color: var(--wh);
 }
 
 .dropdown-content {
@@ -104,7 +105,7 @@ h1 {
 
 .dropdown-content a {
     float: none;
-    color: var(--black);
+    color: var(--grey);
     text-decoration: none;
     display: block;
     padding: 6px 12px;
@@ -113,8 +114,8 @@ h1 {
 }
 
 .dropdown-content a:hover {
-    background-color: #a6a6a65e;
-    color: var(--grey);
+    background-color: #a6a6a686;
+    color: var(--wh);
 }
 
 .dropdown:hover .dropdown-content {
