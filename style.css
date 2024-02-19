@@ -13,6 +13,7 @@
     --mid_d: #7e7eae;
     --tp_d: #000000bc;
     --tp_l: #ffffff14;
+    --pad: .5rem;
 }
 
 body {
@@ -53,7 +54,6 @@ button:hover,
     position: fixed;
     bottom: 7rem;
     right: 0em;
-    z-index: 10;
 }
 
 /* navbar */
@@ -63,7 +63,6 @@ button:hover,
     left: 0;
     width: 100vw;
     background-color: var(--tp_l);
-    z-index: 1000;
     padding: 0 .7rem;
     display: flex;
     justify-content: space-between;
@@ -81,7 +80,7 @@ button:hover,
     float: left;
     color: var(--w);
     text-align: center;
-    padding: .5rem;
+    padding: var(--pad);
     text-decoration: none;
 }
 
@@ -89,7 +88,7 @@ button:hover,
     font-size: 1em;
     box-sizing: border-box;
     border: none;
-    padding: .5rem;
+    padding: var(--pad);
     background-color: inherit;
     font-family: inherit;
     margin: 0;
@@ -102,7 +101,7 @@ button:hover,
 }
 
 .dropdown-content {
-    padding: .5rem;
+    padding: var(--pad);
     display: none;
     position: absolute;
     background-color: var(--w);
@@ -112,9 +111,9 @@ button:hover,
 }
 
 .dropdown-content h4 {
-    color: var(--mid_d);
     font-size: 1rem;
-    margin: .5rem 0;
+    color: var(--mid_d);
+    margin: var(--pad) 0;
 }
 
 .dropdown-content a {
@@ -187,7 +186,7 @@ button:hover,
 /* trusted-by slides */
 .tech-slideshow {
     height: 200px;
-    margin: 10px 0;
+    margin: var(--pad) 0;
     position: relative;
     overflow: hidden;
 }
@@ -198,7 +197,7 @@ button:hover,
     background: url("Cont/Frame 1116606620.png");
     position: absolute;
     transform: translate3d(0, 0, 0);
-    animation: moveSlideshow 10s linear infinite;
+    animation: moveSlideshow 12s linear infinite;
 }
 
 @keyframes moveSlideshow {
