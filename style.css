@@ -11,6 +11,7 @@
     --b: #07080D;
     --mid: #AFB6DD;
     --mid_d: #7e7eae;
+    --d: #bdbcbc6e;
     --tp_d: #000000bc;
     --tp_l: #ffffff14;
     --pad: .5rem;
@@ -61,9 +62,26 @@ button:hover,
     transform: scale(1.1);
 }
 
+.fl {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem var(--pad);
+    gap: 1rem;
+}
+
+.fl img {
+    height: 1.5rem;
+    width: auto;
+}
+
+.ftr img {
+    display: block;
+    height: 10em;
+}
+
 /* navbar */
 .navbar {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
@@ -191,7 +209,7 @@ button:hover,
 
 /* trusted-by slides */
 .tech-slideshow {
-    height: 200px;
+    height: 120px;
     margin: var(--pad) 0;
     position: relative;
     overflow: hidden;
@@ -204,6 +222,45 @@ button:hover,
     position: absolute;
     transform: translate3d(0, 0, 0);
     animation: moveSlideshow 12s linear infinite;
+}
+
+/* footer */
+
+footer {
+    padding: 3rem 2rem 0;
+    position: absolute;
+    width: 90vw;
+    background: var(--b);
+}
+
+.lst {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.lst ul {
+    list-style: none;
+}
+
+.lst a {
+    text-decoration: none;
+}
+
+.ebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ebar a {
+    text-decoration: none;
+}
+
+.btn-left,
+.btn-right {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 
 @keyframes moveSlideshow {
