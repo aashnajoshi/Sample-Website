@@ -64,7 +64,7 @@ button:hover,
     width: 100vw;
     background-color: var(--tp_l);
     z-index: 1000;
-    padding: .5rem;
+    padding: 0 .7rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,20 +77,19 @@ button:hover,
 }
 
 .navbar a {
+    font-size: 1em;
     float: left;
-    font-size: 16px;
     color: var(--w);
     text-align: center;
-    padding: 10px 12px;
+    padding: .5rem;
     text-decoration: none;
 }
 
 .dropdown .dropbtn {
-    font-size: 16px;
+    font-size: 1em;
     box-sizing: border-box;
     border: none;
-    outline: none;
-    padding: 10px 12px;
+    padding: .5rem;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
@@ -103,28 +102,27 @@ button:hover,
 }
 
 .dropdown-content {
-    padding: 8px;
+    padding: .5rem;
     display: none;
     position: absolute;
     background-color: var(--w);
-    border-radius: 8px;
+    border-radius: 1rem;
     z-index: 1;
-    min-width: 140px;
+    min-width: 10rem;
 }
 
 .dropdown-content h4 {
     color: var(--mid_d);
-    font-size: 14px;
-    margin: 8px 0;
+    font-size: 1rem;
+    margin: .5rem 0;
 }
 
 .dropdown-content a {
+    font-size: .7rem;
     float: none;
     color: var(--b);
     text-decoration: none;
     display: block;
-    padding: 6px 12px;
-    font-size: 13px;
     text-align: left;
 }
 
@@ -180,7 +178,7 @@ button:hover,
 }
 
 #dynamic-button {
-    border: 3px solid var(--mid);
+    border: .15rem solid var(--mid);
     border-radius: 2rem;
     padding: 1rem;
     background-color: transparent;
