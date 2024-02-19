@@ -70,12 +70,12 @@ button:hover,
 }
 
 .fl img {
-    height: 1.5rem;
+    height: 1.2rem;
     width: auto;
 }
 
 .ftr img {
-    display: block;
+    display: inline-block;
     height: 10em;
 }
 
@@ -229,8 +229,9 @@ button:hover,
 footer {
     padding: 3rem 2rem 0;
     position: absolute;
-    width: 90vw;
-    background: var(--b);
+    align-items: center;
+    justify-content: center;
+    width: 98vw;
 }
 
 .lst {
