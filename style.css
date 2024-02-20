@@ -19,6 +19,7 @@
 
 body {
     background-color: var(--b);
+    padding: var(--pad);
 }
 
 h1 {
@@ -85,8 +86,8 @@ button:hover,
     top: 0;
     left: 0;
     width: 100vw;
+    padding: var(--pad);
     background-color: var(--tp_l);
-    padding: 0 .7rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -168,7 +169,7 @@ button:hover,
 .search-input {
     background: transparent;
     border: .01rem solid var(--mid);
-    width: 20rem;
+    width: 18rem;
     border-radius: 2rem;
     padding: .4rem;
     text-align: center;
@@ -227,7 +228,7 @@ button:hover,
 /* footer */
 
 footer {
-    padding: 3rem 2rem 0;
+    padding: 2rem;
     position: absolute;
     align-items: center;
     justify-content: center;
@@ -236,6 +237,7 @@ footer {
 
 .lst {
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(3, 1fr);
 }
 
