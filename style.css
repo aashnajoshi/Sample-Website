@@ -6,6 +6,7 @@
     box-sizing: border-box;
     color: var(--w);
     cursor: default;
+    overflow-x: hidden;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
 }
@@ -23,7 +24,6 @@
 
 body {
     background-color: var(--b);
-    padding: var(--pad);
 }
 
 h1 {
@@ -58,32 +58,13 @@ button:hover,
 
 .help {
     position: fixed;
-    bottom: 7rem;
-    right: 0em;
+    bottom: 5rem;
+    right: 0;
 }
 
 .help:hover {
     transition-duration: 10ms;
     transform: scale(1.1);
-}
-
-.fl {
-    display: flex;
-    flex-direction: row;
-    padding: 2rem var(--pad);
-    gap: 1rem;
-}
-
-.fl img {
-    height: 1.2rem;
-    width: auto;
-}
-
-
-
-.ftr img {
-    display: inline-block;
-    height: 10em;
 }
 
 /* navbar */
@@ -92,7 +73,7 @@ button:hover,
     top: 0;
     left: 0;
     width: 100vw;
-    padding: var(--pad);
+    padding: 0 var(--pad);
     background-color: var(--tp_l);
     display: flex;
     justify-content: space-between;
@@ -134,7 +115,7 @@ button:hover,
     padding: var(--pad);
     display: none;
     position: absolute;
-    background-color: var(--w);
+    background-color: var(--tp_d);
     border-radius: 1rem;
     z-index: 1;
     min-width: 10rem;
@@ -150,7 +131,7 @@ button:hover,
 .dropdown-content a {
     font-size: .7rem;
     float: none;
-    color: var(--b);
+    color: var(--w);
     text-decoration: none;
     display: block;
     text-align: left;
@@ -231,8 +212,29 @@ button:hover,
     animation: moveSlideshow 12s linear infinite;
 }
 
-/* footer */
+/* content */
+.fl {
+    display: flex;
+    flex-direction: row;
+    padding: 1.2rem;
+    gap: 1rem;
+}
 
+.fl img {
+    height: 1.2rem;
+    width: auto;
+}
+
+.ftr img {
+    display: inline-block;
+    height: 10em;
+}
+
+section h4 {
+    padding-left: 5rem;
+}
+
+/* footer */
 footer {
     padding: 2rem;
     position: absolute;
