@@ -10,10 +10,6 @@
     font-optical-sizing: auto;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 :root {
     --w: #F5F5F5;
     --b: #07080D;
@@ -26,6 +22,7 @@ body {
 }
 
 body {
+    overflow-x: hidden;
     background-color: var(--b);
 }
 
